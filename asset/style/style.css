@@ -1,0 +1,22 @@
+header .header__box {
+  display: flex;
+  flex-direction: column;
+  margin: 25px auto;
+}
+header img {
+  align-items: center;
+  border-radius: 50%;
+  width: 200px;
+  height: auto;
+  position: relative;
+  align-content: center;
+}
+header h1 {
+  max-width: 100%;
+  padding-left: 20px;
+}
+header p {
+  max-width: 480px;
+  padding: 0 auto;
+  text-align: justify;
+}/*# sourceMappingURL=style.css.map */

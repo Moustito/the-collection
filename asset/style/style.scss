@@ -14,17 +14,19 @@ header {
         position: relative;
         align-content: center;
     }
-    h1{
+
+    h1 {
         max-width: 100%;
         padding: 20px 20px 20px 0;
         text-align: right;
-        
+
         font-size: 32px;
     }
+
     p {
         max-width: 250px;
         margin: 0 auto;
-    
+
         text-align: justify;
         font-size: 12px;
     }
@@ -34,11 +36,20 @@ body {
     img {
         width: 100%;
     }
-    .genre {
-        background-color: yellow;
-        font-size: 13px;
-    }
-    h2 {
-        font-size: 24px;
+
+    article {
+        .genre {
+            background-color: yellow;
+            font-size: 13px;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        .directorEditor {
+            background-color: aqua;
+            font-size: 13px;
+        }
     }
 }

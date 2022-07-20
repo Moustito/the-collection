@@ -116,14 +116,14 @@ const collection = [
             var blockquoteDirectorEditor = document.createTextNode(collection.map(e => `${e.director} ${e.editor}`)[i]);
             article.appendChild(blockquote);
             blockquote.appendChild(blockquoteDirectorEditor);
-            paragraphe.classList.add('DirectorEditor');
+            blockquote.classList.add('directorEditor');
             
             /**Create p description */
             var text = document.createElement("p");
             var textDescription = document.createTextNode(collection.map(e => `${e.description}`)[i]);
             article.appendChild(text);
             text.appendChild(textDescription);
-            paragraphe.classList.add('description');
+            text.classList.add('description');
             
             /**Create button */
             var button = document.createElement("button");

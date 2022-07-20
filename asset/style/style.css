@@ -22,4 +22,15 @@ header p {
   margin: 0 auto;
   text-align: justify;
   font-size: 12px;
+}
+
+body img {
+  width: 100%;
+}
+body .genre {
+  background-color: yellow;
+  font-size: 13px;
+}
+body h2 {
+  font-size: 24px;
 }/*# sourceMappingURL=style.css.map */

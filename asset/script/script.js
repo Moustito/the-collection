@@ -93,4 +93,15 @@ const collection = [
     document.write("</article>");
     document.write("</div");
     document.write("</header>");
+
+    function addItemCollection() {
+        for (let i = 0; i < collection.length; i++) {
+            var newSection = document.createElement("section");
+            var newContent = document.createTextNode(collection[i]);
+            newSection.appendChild(newContent);
+            document.querySelector("body").appendChild(newSection);
+
+        }
+    
+    }addItemCollection()
    

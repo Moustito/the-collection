@@ -1,55 +1,181 @@
-header {
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@100;400&display=swap');
+$oswald: 'oswald';
+$roboto_regular: 'roboto 400';
+$roboto_thin: 'roboto 100';
+$light: #F7F0F5;
+$dark: #403F4C;
+$yellow: #E1AD01;
 
-    .header__box {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 25px auto;
+
+html {
+    background-color: #9C98A1;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+
+    @media (min-width: 600px) {
+        flex-wrap: nowrap;
     }
 
     img {
         align-items: center;
         border-radius: 50%;
-        width: 100%;
-        height: auto;
+        width: 200px;
+
         position: relative;
         align-content: center;
     }
 
     h1 {
         max-width: 100%;
-        padding: 20px 20px 20px 0;
+        padding: 20px 10% 20px 0;
         text-align: right;
 
         font-size: 32px;
+
+        @media (min-width: 600px) {
+            text-align: left;
+            padding-right: 0;
+            max-width: 75%;
+            margin: 0 auto;
+
+            font-size: 80px;
+        }
     }
 
     p {
-        max-width: 250px;
+        max-width: 75%;
         margin: 0 auto;
 
         text-align: justify;
         font-size: 12px;
+
+        @media (min-width: 600px) {
+            font-size: 20px;
+        }
     }
 }
 
-body {
-    img {
-        width: 100%;
+main {
+    @media (min-width: 600px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
     }
 
-    article {
-        .genre {
-            background-color: yellow;
-            font-size: 13px;
+    section {
+        background-color: $dark;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        
+
+        @media (min-width: 600px) {
+            width: 400px;
+            height: 700px;
+            margin: 10px;
+            overflow: hidden;
+            
         }
 
-        h2 {
-            font-size: 24px;
+        .div__image {
+            @media (min-width: 600px) {
+                height: 40%;
+                
+            }
+
+            .image {
+                width: 100%;
+                
+                @media (min-width: 600px) {
+                    height: 100%;
+                    width: auto;
+                    .image:nth-child(6) {
+                        -webkit-filter: grayscale(100%);
+                        filter: grayscale(100%);
+                    }
+                }
+            }
         }
 
-        .directorEditor {
-            background-color: aqua;
-            font-size: 13px;
+        article {
+            margin-bottom: 50px;
+            max-width: 80%;
+
+
+            .genre {
+                padding: 20px 0 20px 0;
+
+                font-family: $roboto_thin;
+                font-size: 13px;
+                color: $light;
+                opacity: 0.5;
+
+                @media (min-width: 600px) {
+                    font-size: 16px;
+                }
+            }
+
+            h2 {
+                font-family: $oswald;
+                font-size: 24px;
+                color: $yellow;
+
+                @media (min-width: 600px) {
+                    font-size: 34px;
+                }
+            }
+
+            .directorEditor {
+                padding: 7px 0 0 0;
+
+                font-family: $roboto_regular;
+                font-size: 13px;
+                color: $light;
+                opacity: 0.5;
+
+                @media (min-width: 600px) {
+                    font-size: 16px;
+                }
+            }
+
+            .directorEditor:nth-child(4) {
+                padding: 0 0 20px 0;
+            }
+
+            .description {
+                font-family: $roboto_thin;
+                font-size: 16px;
+                text-align: justify;
+                color: $light;
+
+                @media (min-width: 600px) {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .link {
+            display: flex;
+            justify-content: center;
+
+
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+
+            .link_youtube {
+                width: 10%;
+            }
+        }
+
+        .link:hover {
+            -webkit-filter: grayscale(0);
+            filter: grayscale(0);
         }
     }
 }

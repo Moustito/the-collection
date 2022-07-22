@@ -1,36 +1,150 @@
-header .header__box {
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@100;400&display=swap");
+html {
+  background-color: #9C98A1;
+}
+
+header {
   display: flex;
   flex-wrap: wrap;
-  margin: 25px auto;
+  margin: 20px auto;
+}
+@media (min-width: 600px) {
+  header {
+    flex-wrap: nowrap;
+  }
 }
 header img {
   align-items: center;
   border-radius: 50%;
-  width: 100%;
-  height: auto;
+  width: 200px;
   position: relative;
   align-content: center;
 }
 header h1 {
   max-width: 100%;
-  padding: 20px 20px 20px 0;
+  padding: 20px 10% 20px 0;
   text-align: right;
   font-size: 32px;
 }
+@media (min-width: 600px) {
+  header h1 {
+    text-align: left;
+    padding-right: 0;
+    max-width: 75%;
+    margin: 0 auto;
+    font-size: 80px;
+  }
+}
 header p {
-  max-width: 250px;
+  max-width: 75%;
   margin: 0 auto;
   text-align: justify;
   font-size: 12px;
 }
+@media (min-width: 600px) {
+  header p {
+    font-size: 20px;
+  }
+}
 
-body img {
+@media (min-width: 600px) {
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+main section {
+  background-color: #403F4C;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 600px) {
+  main section {
+    width: 400px;
+    height: 700px;
+    margin: 10px;
+    overflow: hidden;
+  }
+}
+@media (min-width: 600px) {
+  main section .div__image {
+    height: 40%;
+  }
+}
+main section .div__image .image {
   width: 100%;
 }
-body .genre {
-  background-color: yellow;
-  font-size: 13px;
+@media (min-width: 600px) {
+  main section .div__image .image {
+    height: 100%;
+    width: auto;
+  }
+  main section .div__image .image .image:nth-child(6) {
+    filter: grayscale(100%);
+  }
 }
-body h2 {
+main section article {
+  margin-bottom: 50px;
+  max-width: 80%;
+}
+main section article .genre {
+  padding: 20px 0 20px 0;
+  font-family: "roboto 100";
+  font-size: 13px;
+  color: #F7F0F5;
+  opacity: 0.5;
+}
+@media (min-width: 600px) {
+  main section article .genre {
+    font-size: 16px;
+  }
+}
+main section article h2 {
+  font-family: "oswald";
   font-size: 24px;
+  color: #E1AD01;
+}
+@media (min-width: 600px) {
+  main section article h2 {
+    font-size: 34px;
+  }
+}
+main section article .directorEditor {
+  padding: 7px 0 0 0;
+  font-family: "roboto 400";
+  font-size: 13px;
+  color: #F7F0F5;
+  opacity: 0.5;
+}
+@media (min-width: 600px) {
+  main section article .directorEditor {
+    font-size: 16px;
+  }
+}
+main section article .directorEditor:nth-child(4) {
+  padding: 0 0 20px 0;
+}
+main section article .description {
+  font-family: "roboto 100";
+  font-size: 16px;
+  text-align: justify;
+  color: #F7F0F5;
+}
+@media (min-width: 600px) {
+  main section article .description {
+    font-size: 20px;
+  }
+}
+main section .link {
+  display: flex;
+  justify-content: center;
+  filter: grayscale(100%);
+}
+main section .link .link_youtube {
+  width: 10%;
+}
+main section .link:hover {
+  filter: grayscale(0);
 }/*# sourceMappingURL=style.css.map */

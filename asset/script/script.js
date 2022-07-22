@@ -104,14 +104,18 @@ function addItemCollection() {
         section.appendChild(article);
 
         /**Create p genre */
-        let elemGenre = collection.map(e => `${e.genre}`)
-        for (element of elemGenre) {
-            var paragraphe = document.createElement("p");
-            var paragrapheGenre = document.createTextNode(element);
-            article.appendChild(paragraphe);
-            paragraphe.appendChild(paragrapheGenre);
-            paragraphe.classList.add('genre');
-        }
+        collection.map(e => {
+            `${e.genre}`
+            for (let z = 0; z < e.genre.length; z++){
+                var paragraphe = document.createElement("p");
+                var paragrapheGenre = document.createTextNode(e.genre[z]);
+                article.appendChild(paragraphe);
+                paragraphe.appendChild(paragrapheGenre);
+                paragraphe.classList.add('genre');
+            }
+        })[i];
+
+
 
         /**Create h2 name */
         var h2 = document.createElement("h2");
@@ -125,7 +129,7 @@ function addItemCollection() {
         article.appendChild(blockquote);
         blockquote.appendChild(blockquoteDirector);
         blockquote.classList.add('directorEditor');
-        
+
         /**Create p Editor */
         var blockquote2 = document.createElement("p");
         var blockquoteEditor = document.createTextNode(collection.map(e => `${e.editor}`)[i]);
@@ -145,7 +149,7 @@ function addItemCollection() {
         var linkImg = document.createElement("img");
         article.appendChild(link);
         link.appendChild(linkImg);
-        link.href  = collection.map(e => `${e.trailer}`)[i];
+        link.href = collection.map(e => `${e.trailer}`)[i];
         linkImg.src = "asset/image/youtube.png";
         linkImg.classList.add('link_youtube');
         link.classList.add('link');

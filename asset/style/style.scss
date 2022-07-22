@@ -14,7 +14,10 @@ html {
 header {
     display: flex;
     flex-wrap: wrap;
-    margin: 20px auto;
+
+    margin: 20px 20px 20px 20%;
+
+    
 
     @media (min-width: 600px) {
         flex-wrap: nowrap;
@@ -29,32 +32,34 @@ header {
         align-content: center;
     }
 
-    h1 {
-        max-width: 100%;
-        padding: 20px 10% 20px 0;
-        text-align: right;
+    .header__text {
+        margin-left: 2%;
+        h1 {
+            max-width: 100%;
+            padding: 20px 0 20px 0;
+            
 
-        font-size: 32px;
+            font-family: $oswald;
+            font-size: 32px;
 
-        @media (min-width: 600px) {
-            text-align: left;
-            padding-right: 0;
-            max-width: 75%;
-            margin: 0 auto;
+            @media (min-width: 600px) {
+                text-align: left;
+                max-width: 75%;
 
-            font-size: 80px;
+                font-size: 80px;
+            }
         }
-    }
 
-    p {
-        max-width: 75%;
-        margin: 0 auto;
+        p {
+            max-width: 75%;
 
-        text-align: justify;
-        font-size: 12px;
+            text-align: justify;
+            font-size: 12px;
+            font-family: $roboto_regular;
 
-        @media (min-width: 600px) {
-            font-size: 20px;
+            @media (min-width: 600px) {
+                font-size: 20px;
+            }
         }
     }
 }
@@ -64,7 +69,7 @@ main {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        
+
     }
 
     section {
@@ -73,25 +78,25 @@ main {
         flex-direction: column;
         align-items: center;
 
-        
+
 
         @media (min-width: 600px) {
             width: 400px;
             height: 700px;
             margin: 10px;
             overflow: hidden;
-            
+
         }
 
         .div__image {
             @media (min-width: 600px) {
                 height: 40%;
-                
+
             }
 
             .image {
                 width: 100%;
-                
+
                 @media (min-width: 600px) {
                     height: 100%;
                     width: auto;

@@ -95,10 +95,6 @@ main {
                 @media (min-width: 600px) {
                     height: 100%;
                     width: auto;
-                    .image:nth-child(6) {
-                        -webkit-filter: grayscale(100%);
-                        filter: grayscale(100%);
-                    }
                 }
             }
         }
@@ -115,6 +111,8 @@ main {
                 font-size: 13px;
                 color: $light;
                 opacity: 0.5;
+
+                border: 1px #E1AD01 solid;
 
                 @media (min-width: 600px) {
                     font-size: 16px;
@@ -162,7 +160,8 @@ main {
 
         .link {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
+            align-items: bottom;
 
 
             -webkit-filter: grayscale(100%);

@@ -6,7 +6,7 @@ const collection = [
         editor: "The Irregular Corporation",
         picture: "asset/image/good-company-cover.jpg",
         genre: ["Multijoueur", "Gestion", "Automatisation", "Simulation"],
-        description: ["Good Company est un jeu de simulation de gestion approfondi dans lequel vous bâtissez une entreprise technologique innovante. Assemblez des lignes de production complexes, gérez la logistique des effectifs et mettez des produits de qualité sur le marché pour devenir la meilleure entreprise du pays !"],
+        description: "Good Company est un jeu de simulation de gestion approfondi dans lequel vous bâtissez une entreprise technologique innovante. Assemblez des lignes de production complexes, gérez la logistique des effectifs et mettez des produits de qualité sur le marché pour devenir la meilleure entreprise du pays !",
         trailer: "https://www.youtube.com/watch?v=kuBzQyyZsqM"
     },
     {
@@ -104,11 +104,14 @@ function addItemCollection() {
         section.appendChild(article);
 
         /**Create p genre */
-        var paragraphe = document.createElement("p");
-        var paragrapheGenre = document.createTextNode(collection.map(e => `${e.genre}`)[i]);
-        article.appendChild(paragraphe);
-        paragraphe.appendChild(paragrapheGenre);
-        paragraphe.classList.add('genre');
+        let elemGenre = collection.map(e => `${e.genre}`)
+        for (element of elemGenre) {
+            var paragraphe = document.createElement("p");
+            var paragrapheGenre = document.createTextNode(element);
+            article.appendChild(paragraphe);
+            paragraphe.appendChild(paragrapheGenre);
+            paragraphe.classList.add('genre');
+        }
 
         /**Create h2 name */
         var h2 = document.createElement("h2");

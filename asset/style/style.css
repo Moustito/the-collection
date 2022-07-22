@@ -81,9 +81,6 @@ main section .div__image .image {
     height: 100%;
     width: auto;
   }
-  main section .div__image .image .image:nth-child(6) {
-    filter: grayscale(100%);
-  }
 }
 main section article {
   margin-bottom: 50px;
@@ -95,6 +92,7 @@ main section article .genre {
   font-size: 13px;
   color: #F7F0F5;
   opacity: 0.5;
+  border: 1px #E1AD01 solid;
 }
 @media (min-width: 600px) {
   main section article .genre {
@@ -139,7 +137,8 @@ main section article .description {
 }
 main section .link {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: bottom;
   filter: grayscale(100%);
 }
 main section .link .link_youtube {

@@ -84,21 +84,27 @@ main section .div__image .image {
   }
 }
 main section article {
-  margin-bottom: 50px;
   max-width: 80%;
 }
 main section article .genre {
-  padding: 20px 0 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
   font-family: "roboto 100";
   font-size: 13px;
   color: #F7F0F5;
   opacity: 0.5;
-  border: 1px #E1AD01 solid;
 }
 @media (min-width: 600px) {
   main section article .genre {
-    font-size: 16px;
+    font-size: 12px;
   }
+}
+main section article .genre p {
+  margin: 15px 0 15px 5px;
+  padding: 7px;
+  border: 2px #E1AD01 solid;
 }
 main section article h2 {
   font-family: "oswald";
@@ -136,15 +142,20 @@ main section article .description {
     font-size: 20px;
   }
 }
-main section .link {
+main section footer {
+  height: 100%;
   display: flex;
-  justify-content: flex-start;
-  align-items: bottom;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+main section footer .link {
+  width: 10%;
   filter: grayscale(100%);
 }
-main section .link .link_youtube {
-  width: 10%;
+main section footer .link .link_youtube {
+  width: 100%;
 }
-main section .link:hover {
+main section footer .link:hover {
   filter: grayscale(0);
 }/*# sourceMappingURL=style.css.map */

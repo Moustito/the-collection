@@ -17,7 +17,7 @@ header {
 
     margin: 20px 20px 20px 20%;
 
-    
+
 
     @media (min-width: 600px) {
         flex-wrap: nowrap;
@@ -34,10 +34,11 @@ header {
 
     .header__text {
         margin-left: 2%;
+
         h1 {
             max-width: 100%;
             padding: 20px 0 20px 0;
-            
+
 
             font-family: $oswald;
             font-size: 32px;
@@ -69,7 +70,6 @@ main {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-
     }
 
     section {
@@ -78,20 +78,16 @@ main {
         flex-direction: column;
         align-items: center;
 
-
-
         @media (min-width: 600px) {
             width: 400px;
             height: 700px;
             margin: 10px;
             overflow: hidden;
-
         }
 
         .div__image {
             @media (min-width: 600px) {
                 height: 40%;
-
             }
 
             .image {
@@ -105,22 +101,28 @@ main {
         }
 
         article {
-            margin-bottom: 50px;
             max-width: 80%;
 
 
             .genre {
-                padding: 20px 0 20px 0;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: space-between;
 
                 font-family: $roboto_thin;
                 font-size: 13px;
                 color: $light;
                 opacity: 0.5;
 
-                border: 1px #E1AD01 solid;
-
                 @media (min-width: 600px) {
-                    font-size: 16px;
+                    font-size: 12px;
+                }
+
+                p {
+                    margin: 15px 0 15px 5px;
+                    padding: 7px;
+                    border: 2px $yellow solid;
                 }
             }
 
@@ -163,23 +165,28 @@ main {
             }
         }
 
-        .link {
+        footer {
+            height: 100%;
             display: flex;
-            justify-content: flex-start;
-            align-items: bottom;
+            justify-content: center;
+            align-items: flex-end;
+            margin-bottom: 10px;
 
-
-            -webkit-filter: grayscale(100%);
-            filter: grayscale(100%);
-
-            .link_youtube {
+            .link {
                 width: 10%;
-            }
-        }
 
-        .link:hover {
-            -webkit-filter: grayscale(0);
-            filter: grayscale(0);
+                -webkit-filter: grayscale(100%);
+                filter: grayscale(100%);
+
+                .link_youtube {
+                    width: 100%;
+                }
+            }
+
+            .link:hover {
+                -webkit-filter: grayscale(0);
+                filter: grayscale(0);
+            }
         }
     }
 }

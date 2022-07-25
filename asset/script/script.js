@@ -35,7 +35,7 @@ const collection = [
         director: "GreenHeart Games",
         editor: "GreenHeart Games",
         picture: "asset/image/game-dev-tycoon-cover.jpg",
-        genre: ["Indépendant", "Gestion", "Jeu solo", "Simulation", "Bac a sable"],
+        genre: ["Indépendant", "Gestion", "Simulation", "Bac a sable"],
         description: ["Dans ce jeu de simulation de gestion, vous aller lancer votre propre entreprise de jeux vidéo dans les années 80. Créez des jeux nº 1 des ventes, explorez de nouvelles technologies pour dynamiser votre entreprise et inventez de nouveaux types de jeu. Devenez le numéro 1 du marché et faites-vous des fans sur toute la planète."],
         trailer: "https://www.youtube.com/watch?v=mpGO0uKas64"
     },
@@ -45,7 +45,7 @@ const collection = [
         director: "Sloclap",
         editor: "Devolver Digital",
         picture: "asset/image/absolver-cover.jpg",
-        genre: ["Combat", "Arts martiaux", "JcJ", "JcE", "Monde ouvert", "Indépendant", "RPG", "Difficile"],
+        genre: ["Arts martiaux","Monde ouvert", "Indépendant", "RPG"],
         description: ["Dans Absolver, un jeu de combat multijoueur en ligne, les Guides confient à chaque joueur un masque d'Aspirant et déterminent s'il est digne de rejoindre leur unité de combattants d'élite vouée à maintenir la stabilité du monde."],
         trailer: "https://www.youtube.com/watch?v=w0eypGqZtEQ"
     },
@@ -54,8 +54,8 @@ const collection = [
         releaseDate: "19 sept. 2017",
         director: "ULTRA ULTRA",
         editor: "ULTRA ULTRA",
-        picture: "asset/image/echo-cover.jpg",
-        genre: ["Infiltration", "SF", "Aventure", "Action", "Indépendant", "Atmosphère"],
+        picture: "asset/image/echo-cover.jpeg",
+        genre: ["Infiltration", "SF", "Aventure", "Action", "Indépendant"],
         description: ["Après avoir passé un siècle en stase, En rejoint sa destination : un palais de légende. S'appuyant sur des technologies oubliées, En a pour espoir de faire revenir quelqu'un à la vie. Mais rien ne l'avait préparée à ce qu'elle va affronter dans les sombres couloirs dissimulés sous la surface."],
         trailer: "https://www.youtube.com/watch?v=zG5Lh7Uu-EA"
     },
@@ -65,7 +65,7 @@ const collection = [
         director: "Firaxis Games",
         editor: "2K",
         picture: "asset/image/civilizationvi-cover.jpg",
-        genre: ["Starégie au tour par tour", "Multijoueur", "Jeu solo", "Historique", "4X"],
+        genre: ["Starégie tour par tour", "Multijoueur", "Historique", "4X"],
         description: ["Civilization VI est le dernier épisode de la franchise éponyme, récompensée de nombreuses fois. Repoussez les frontières de votre empire, développez votre patrimoine culturel et affrontez les plus grands seigneurs de l'histoire. Votre civilisation tiendra-t-elle face aux ravages du temps ?"],
         trailer: "https://www.youtube.com/watch?v=5KdE0p2joJw"
     },
@@ -75,7 +75,7 @@ const collection = [
         director: "Arkane Studios",
         editor: "Bethesda Softworks",
         picture: "asset/image/dishonored-cover.jpg",
-        genre: ["Infiltration", "Action", "Assasinat", "Steampunk", "Jeu solo", "Atmosphère"],
+        genre: ["Infiltration", "Action", "Assasinat", "Steampunk"],
         description: ["Dishonored est un jeu d'action / infiltration immersif, dans lequel vous incarnez un assassin aux pouvoirs surnaturels poussé par un désir de vengeance. Éliminez vos cibles grâce à un système de combat dynamique permettant de combiner les innombrables pouvoirs surnaturels, armes et gadgets à votre disposition."],
         trailer: "https://www.youtube.com/watch?v=XMCzCvR-O8M"
     },
@@ -104,16 +104,18 @@ function addItemCollection() {
         section.appendChild(article);
 
         /**Create p genre */
+        var divGenre = document.createElement("div");
+        article.appendChild(divGenre);
+        divGenre.classList.add('genre');
         collection.map(e => {
             `${e.genre}`
-            for (let z = 0; z < e.genre.length; z++){
+            for (let z = 0; z < e.genre.length && e.genre == collection.map(e => `${e.genre}`)[i]; z++){
                 var paragraphe = document.createElement("p");
                 var paragrapheGenre = document.createTextNode(e.genre[z]);
-                article.appendChild(paragraphe);
+                divGenre.appendChild(paragraphe);
                 paragraphe.appendChild(paragrapheGenre);
-                paragraphe.classList.add('genre');
             }
-        })[i];
+        });
 
 
 
@@ -145,9 +147,11 @@ function addItemCollection() {
         text.classList.add('description');
 
         /**Create button */
+        var footer = document.createElement("footer");
         var link = document.createElement("a");
         var linkImg = document.createElement("img");
-        article.appendChild(link);
+        section.appendChild(footer);
+        footer.appendChild(link);
         link.appendChild(linkImg);
         link.href = collection.map(e => `${e.trailer}`)[i];
         linkImg.src = "asset/image/youtube.png";

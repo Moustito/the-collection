@@ -15,7 +15,7 @@ const collection = [
         director: "Ubisoft Blue Byte",
         editor: "Ubisoft",
         picture: "asset/image/anno-1800-cover.jpg",
-        genre: ["City-builder", "Gestion", "Jeu de stratégie en temps réel"],
+        genre: ["City-builder", "stratégie en temps réel", "Gestion"],
         description: ["Bienvenue au 19e siècle. Un siècle d'industrialisation, de démêlés diplomatiques et de découvertes. Riche d'innovations technologiques, de conspirations secrètes et d'allégeances volatiles."],
         trailer: "https://www.youtube.com/watch?v=gMsFL7W-IGA"
     },
@@ -25,7 +25,7 @@ const collection = [
         director: "QLOC",
         editor: "FromSoftware",
         picture: "asset/image/dark-souls-remastered-cover.jpg",
-        genre: ["Dark Fantasy", "Action et RPG", "Difficile", "Sombre"],
+        genre: ["Dark Fantasy", "Action RPG", "Difficile", "Sombre"],
         description: ["Au commencement, il y avait l'Âge des Anciens, où les dragons ancestraux régnaient sans conteste dans un monde noyé sous un épais brouillard. Puis vint le Feu, amenant la Disparité. Certains êtres, cachés dans les Ténèbres, y découvrirent un nouveau pouvoir et s’élevèrent contre les dragons."],
         trailer: "https://www.youtube.com/watch?v=qRhb9UduYmw"
     },
@@ -45,7 +45,7 @@ const collection = [
         director: "Sloclap",
         editor: "Devolver Digital",
         picture: "asset/image/absolver-cover.jpg",
-        genre: ["Arts martiaux","Monde ouvert", "Indépendant", "RPG"],
+        genre: ["Arts martiaux", "RPG", "Monde ouvert", "Indépendant"],
         description: ["Dans Absolver, un jeu de combat multijoueur en ligne, les Guides confient à chaque joueur un masque d'Aspirant et déterminent s'il est digne de rejoindre leur unité de combattants d'élite vouée à maintenir la stabilité du monde."],
         trailer: "https://www.youtube.com/watch?v=w0eypGqZtEQ"
     },
@@ -65,7 +65,7 @@ const collection = [
         director: "Firaxis Games",
         editor: "2K",
         picture: "asset/image/civilizationvi-cover.jpg",
-        genre: ["Starégie tour par tour", "Multijoueur", "Historique", "4X"],
+        genre: ["4X", "Starégie tour par tour", "Multijoueur", "Historique"],
         description: ["Civilization VI est le dernier épisode de la franchise éponyme, récompensée de nombreuses fois. Repoussez les frontières de votre empire, développez votre patrimoine culturel et affrontez les plus grands seigneurs de l'histoire. Votre civilisation tiendra-t-elle face aux ravages du temps ?"],
         trailer: "https://www.youtube.com/watch?v=5KdE0p2joJw"
     },

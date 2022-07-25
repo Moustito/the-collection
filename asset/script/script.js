@@ -15,7 +15,7 @@ const collection = [
         director: "Ubisoft Blue Byte",
         editor: "Ubisoft",
         picture: "asset/image/anno-1800-cover.jpg",
-        genre: ["City-builder", "stratégie en temps réel", "Gestion"],
+        genre: ["City-builder", "Stratégie en temps réel", "Gestion"],
         description: ["Bienvenue au 19e siècle. Un siècle d'industrialisation, de démêlés diplomatiques et de découvertes. Riche d'innovations technologiques, de conspirations secrètes et d'allégeances volatiles."],
         trailer: "https://www.youtube.com/watch?v=gMsFL7W-IGA"
     },

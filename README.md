@@ -6,4 +6,4 @@ As part of my training at Becode, this project aims to summarize our current kno
 - Javascript Basics
 - The DOM
 
-![The Collection](https://moustito.github.io/the-collection/)
+[Lien](https://moustito.github.io/the-collection/ "The Collection")

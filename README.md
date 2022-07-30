@@ -5,3 +5,5 @@ As part of my training at Becode, this project aims to summarize our current kno
 - Responsive design
 - Javascript Basics
 - The DOM
+
+![The Collection](https://moustito.github.io/the-collection/)

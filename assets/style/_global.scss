@@ -1,0 +1,10 @@
+html {
+    background-color: #9C98A1;
+}
+main {
+    @media (min-width: 600px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

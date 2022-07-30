@@ -4,7 +4,7 @@ const collection = [
         releaseDate: "21 juin 2022",
         director: "Chasing Carrots",
         editor: "The Irregular Corporation",
-        picture: "asset/image/good-company-cover.jpg",
+        picture: "assets/image/good-company-cover.jpg",
         genre: ["Multijoueur", "Gestion", "Automatisation", "Simulation"],
         description: "Good Company est un jeu de simulation de gestion approfondi dans lequel vous bâtissez une entreprise technologique innovante. Assemblez des lignes de production complexes, gérez la logistique des effectifs et mettez des produits de qualité sur le marché pour devenir la meilleure entreprise du pays !",
         trailer: "https://www.youtube.com/watch?v=kuBzQyyZsqM"
@@ -14,7 +14,7 @@ const collection = [
         releaseDate: "16 avril 2019",
         director: "Ubisoft Blue Byte",
         editor: "Ubisoft",
-        picture: "asset/image/anno-1800-cover.jpg",
+        picture: "assets/image/anno-1800-cover.jpg",
         genre: ["City-builder", "Stratégie en temps réel", "Gestion"],
         description: ["Bienvenue au 19e siècle. Un siècle d'industrialisation, de démêlés diplomatiques et de découvertes. Riche d'innovations technologiques, de conspirations secrètes et d'allégeances volatiles."],
         trailer: "https://www.youtube.com/watch?v=gMsFL7W-IGA"
@@ -24,7 +24,7 @@ const collection = [
         releaseDate: "24 mai 2018",
         director: "QLOC",
         editor: "FromSoftware",
-        picture: "asset/image/dark-souls-remastered-cover.jpg",
+        picture: "assets/image/dark-souls-remastered-cover.jpg",
         genre: ["Dark Fantasy", "Action RPG", "Difficile", "Sombre"],
         description: ["Au commencement, il y avait l'Âge des Anciens, où les dragons ancestraux régnaient sans conteste dans un monde noyé sous un épais brouillard. Puis vint le Feu, amenant la Disparité. Certains êtres, cachés dans les Ténèbres, y découvrirent un nouveau pouvoir et s’élevèrent contre les dragons."],
         trailer: "https://www.youtube.com/watch?v=qRhb9UduYmw"
@@ -34,7 +34,7 @@ const collection = [
         releaseDate: "29 aout 2013",
         director: "GreenHeart Games",
         editor: "GreenHeart Games",
-        picture: "asset/image/game-dev-tycoon-cover.jpg",
+        picture: "assets/image/game-dev-tycoon-cover.jpg",
         genre: ["Indépendant", "Gestion", "Simulation", "Bac a sable"],
         description: ["Dans ce jeu de simulation de gestion, vous aller lancer votre propre entreprise de jeux vidéo dans les années 80. Créez des jeux nº 1 des ventes, explorez de nouvelles technologies pour dynamiser votre entreprise et inventez de nouveaux types de jeu. Devenez le numéro 1 du marché et faites-vous des fans sur toute la planète."],
         trailer: "https://www.youtube.com/watch?v=mpGO0uKas64"
@@ -44,7 +44,7 @@ const collection = [
         releaseDate: "29 aout 2017",
         director: "Sloclap",
         editor: "Devolver Digital",
-        picture: "asset/image/absolver-cover.jpg",
+        picture: "assets/image/absolver-cover.jpg",
         genre: ["Arts martiaux", "RPG", "Monde ouvert", "Indépendant"],
         description: ["Dans Absolver, un jeu de combat multijoueur en ligne, les Guides confient à chaque joueur un masque d'Aspirant et déterminent s'il est digne de rejoindre leur unité de combattants d'élite vouée à maintenir la stabilité du monde."],
         trailer: "https://www.youtube.com/watch?v=w0eypGqZtEQ"
@@ -54,7 +54,7 @@ const collection = [
         releaseDate: "19 sept. 2017",
         director: "ULTRA ULTRA",
         editor: "ULTRA ULTRA",
-        picture: "asset/image/echo-cover.jpeg",
+        picture: "assets/image/echo-cover.jpeg",
         genre: ["Infiltration", "SF", "Aventure", "Action", "Indépendant"],
         description: ["Après avoir passé un siècle en stase, En rejoint sa destination : un palais de légende. S'appuyant sur des technologies oubliées, En a pour espoir de faire revenir quelqu'un à la vie. Mais rien ne l'avait préparée à ce qu'elle va affronter dans les sombres couloirs dissimulés sous la surface."],
         trailer: "https://www.youtube.com/watch?v=zG5Lh7Uu-EA"
@@ -64,7 +64,7 @@ const collection = [
         releaseDate: "21 oct. 2016",
         director: "Firaxis Games",
         editor: "2K",
-        picture: "asset/image/civilizationvi-cover.jpg",
+        picture: "assets/image/civilizationvi-cover.jpg",
         genre: ["4X", "Starégie tour par tour", "Multijoueur", "Historique"],
         description: ["Civilization VI est le dernier épisode de la franchise éponyme, récompensée de nombreuses fois. Repoussez les frontières de votre empire, développez votre patrimoine culturel et affrontez les plus grands seigneurs de l'histoire. Votre civilisation tiendra-t-elle face aux ravages du temps ?"],
         trailer: "https://www.youtube.com/watch?v=5KdE0p2joJw"
@@ -74,7 +74,7 @@ const collection = [
         releaseDate: "12 oct. 2012",
         director: "Arkane Studios",
         editor: "Bethesda Softworks",
-        picture: "asset/image/dishonored-cover.jpg",
+        picture: "assets/image/dishonored-cover.jpg",
         genre: ["Infiltration", "Action", "Assasinat", "Steampunk"],
         description: ["Dishonored est un jeu d'action / infiltration immersif, dans lequel vous incarnez un assassin aux pouvoirs surnaturels poussé par un désir de vengeance. Éliminez vos cibles grâce à un système de combat dynamique permettant de combiner les innombrables pouvoirs surnaturels, armes et gadgets à votre disposition."],
         trailer: "https://www.youtube.com/watch?v=XMCzCvR-O8M"
@@ -82,66 +82,62 @@ const collection = [
 ];
 
 function addItemCollection() {
-    var section = document.createElement("main");
-    document.querySelector("body").appendChild(section);
+    let main = document.createElement("main");
+    document.querySelector("body").appendChild(main);
 
     for (let i = 0; i < collection.length; i++) {
         /**Create section */
-        var section = document.createElement("section");
-        document.querySelector("main").appendChild(section);
+        let section = document.createElement("section");
+        main.appendChild(section);
 
         /**Create div image */
-        var divImg = document.createElement("div");
-        var image = document.createElement("img");
-        image.src = collection.map(e => `${e.picture}`)[i];
+        let divImg = document.createElement("div");
+        let image = document.createElement("img");
+        image.src = collection[i].picture;
         section.appendChild(divImg);
         divImg.appendChild(image);
-        divImg.classList.add('div__image');
-        image.classList.add('image');
+        divImg.classList.add('divImg');
+        image.classList.add('divImg__image');
 
         /**Create article */
-        var article = document.createElement("article");
+        let article = document.createElement("article");
         section.appendChild(article);
 
         /**Create p genre */
-        var divGenre = document.createElement("div");
+        let divGenre = document.createElement("div");
         article.appendChild(divGenre);
         divGenre.classList.add('genre');
-        collection.map(e => {
-            `${e.genre}`
-            for (let z = 0; z < e.genre.length && e.genre == collection.map(e => `${e.genre}`)[i]; z++){
-                var paragraphe = document.createElement("p");
-                var paragrapheGenre = document.createTextNode(e.genre[z]);
-                divGenre.appendChild(paragraphe);
-                paragraphe.appendChild(paragrapheGenre);
-            }
-        });
 
-
+        for (let element of collection[i].genre) {
+            let paragraphe = document.createElement("p");
+            let paragrapheGenre = document.createTextNode(element);
+            divGenre.appendChild(paragraphe);
+            paragraphe.appendChild(paragrapheGenre);
+        }
 
         /**Create h2 name */
         var h2 = document.createElement("h2");
-        var h2Name = document.createTextNode(collection.map(e => `${e.name}`)[i]);
+        var h2Name = document.createTextNode(collection[i].name);
         article.appendChild(h2);
         h2.appendChild(h2Name);
 
         /**Create p Director */
         var blockquote = document.createElement("p");
-        var blockquoteDirector = document.createTextNode(collection.map(e => `${e.director}`)[i]);
+        var blockquoteDirector = document.createTextNode(collection[i].director);
         article.appendChild(blockquote);
         blockquote.appendChild(blockquoteDirector);
         blockquote.classList.add('directorEditor');
 
         /**Create p Editor */
         var blockquote2 = document.createElement("p");
-        var blockquoteEditor = document.createTextNode(collection.map(e => `${e.editor}`)[i]);
+        var blockquoteEditor = document.createTextNode(collection[i].editor);
         article.appendChild(blockquote2);
         blockquote2.appendChild(blockquoteEditor);
         blockquote2.classList.add('directorEditor');
 
         /**Create p description */
         var text = document.createElement("p");
-        var textDescription = document.createTextNode(collection.map(e => `${e.description}`)[i]);
+        var textDescription = document.createTextNode(collection[i].description);
         article.appendChild(text);
         text.appendChild(textDescription);
         text.classList.add('description');
@@ -153,14 +149,10 @@ function addItemCollection() {
         section.appendChild(footer);
         footer.appendChild(link);
         link.appendChild(linkImg);
-        link.href = collection.map(e => `${e.trailer}`)[i];
-        linkImg.src = "asset/image/youtube.png";
-        linkImg.classList.add('link_youtube');
+        link.href = collection[i].trailer;
+        linkImg.src = "assets/image/youtube.png";
         link.classList.add('link');
-
+        linkImg.classList.add('link__youtube');
     }
 
 } addItemCollection()
-    //console.log(collection.map(e => `${e.name}`).join('\n'));
-    //collection.map(e => `${e.name} ${e.releaseDate} ${e.director} ${e.editor} ${e.picture} ${e.genre} ${e.description} ${e.trailer}`)
-

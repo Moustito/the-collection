@@ -1,51 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@100;400&display=swap");
-html {
-  background-color: #9C98A1;
+header div {
+  margin-left: auto;
+  margin-right: auto;
+}
+header div img {
+  width: 100%;
+}
+@media (min-width: 600px) {
+  header div {
+    width: 40%;
+  }
 }
 
-header {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 20px 20px 20px 20%;
-}
-@media (min-width: 600px) {
-  header {
-    flex-wrap: nowrap;
-  }
-}
-header img {
-  align-items: center;
-  border-radius: 50%;
-  width: 200px;
-  position: relative;
-  align-content: center;
-}
-header .header__text {
-  margin-left: 2%;
-}
-header .header__text h1 {
-  max-width: 100%;
-  padding: 20px 0 20px 0;
-  font-family: "oswald";
-  font-size: 32px;
-}
-@media (min-width: 600px) {
-  header .header__text h1 {
-    text-align: left;
-    max-width: 75%;
-    font-size: 80px;
-  }
-}
-header .header__text p {
-  max-width: 75%;
-  text-align: justify;
-  font-size: 12px;
-  font-family: "roboto 400";
-}
-@media (min-width: 600px) {
-  header .header__text p {
-    font-size: 20px;
-  }
+html {
+  background-color: #9C98A1;
 }
 
 @media (min-width: 600px) {
@@ -55,6 +23,7 @@ header .header__text p {
     justify-content: center;
   }
 }
+
 main section {
   background-color: #403F4C;
   display: flex;
@@ -70,15 +39,15 @@ main section {
   }
 }
 @media (min-width: 600px) {
-  main section .div__image {
+  main section .divImg {
     height: 40%;
   }
 }
-main section .div__image .image {
+main section .divImg__image {
   width: 100%;
 }
 @media (min-width: 600px) {
-  main section .div__image .image {
+  main section .divImg__image {
     height: 100%;
     width: auto;
   }
@@ -115,7 +84,7 @@ main section article h2 {
 }
 @media (min-width: 600px) {
   main section article h2 {
-    font-size: 34px;
+    font-size: 32px;
   }
 }
 main section article .directorEditor {
@@ -155,7 +124,7 @@ main section footer .link {
   width: 10%;
   filter: grayscale(100%);
 }
-main section footer .link .link_youtube {
+main section footer .link__youtube {
   width: 100%;
 }
 main section footer .link:hover {

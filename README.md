@@ -8,7 +8,7 @@
 Liste et carte créée à partir d'un tableau Json.
 
 ### Work in progress
-Prochainement, je lierai la collection à une Api, pour générer une liste aléatoire de mes jeux vidéo.
+Prochainement, je lierai la collection à une Api, pour générer une liste aléatoire de mes jeux vidéo. Ainsi que réaliser un meilleur css, amélioration des tags et des couleurs.
 
 Lien : [Consignes Becode](https://github.com/becodeorg/CRL-Wilson-1/tree/master/1.TRAIL/01.The-Field/07.DOM/Projects/Collection)
 
